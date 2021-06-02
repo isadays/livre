@@ -1,7 +1,7 @@
-<?php
+<?php 
 class Transacao
 {
-    private $id_transacao;
+    private $idtransacao;
     private $valor;
     private $data;
     private $tipo;
@@ -9,16 +9,46 @@ class Transacao
     private $id_livro;
 
 }
-
-// Getters e Setter
-public function getIdTransacao()
+public function setIDTransacao($idtransacao)
 {
-    return $this->id_transacao;
+    $this->idtransacao = $idtransacao;
+}
+public function getIDTransacao()
+{
+    return $this-> idtransacao;
 }
 
-public function setIdTransacao($id_transacao)
+public function setValor($valor)
 {
-    $this->$id_transacao = $id_transacao;
+    $this->valor = $valor;
+}
+public function getValor()
+{
+    return $this-> valor;
+}
+public function setData($data)
+{
+    $this->data = $data;
+}
+public function getData()
+{
+    return $this-> data;
+}
+public function setIDUsuario($id_usuario)
+{
+    $this->IdUsuario = $id_usuario;
+}
+public function getIDUsuario()
+{
+    return $this-> id_usuario;
+}
+public function setIDLivro($id_livro)
+{
+    $this->id_livro = $id_livro;
+}
+public function getIDLivro()
+{
+    return $this-> id_livro;
 }
 
 ?>
