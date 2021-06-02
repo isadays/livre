@@ -1,7 +1,7 @@
 # <b>Livre</b>
 Trabalho de Conclusão de Curso - Desenvolvimento de Sistemas.
 
-Este é um projeto de uma plataforma de compra, venda ou troca de livros usados. Os usuários da
+Este é o projeto de uma plataforma de compra, venda ou troca de livros usados. Os usuários da
 plataforma podem disponibilizar seus livros com as opções de venda ou troca
 e consequentemente, os interessados poderão solicitar o livro. Após demonstração de interesse no
 produto, ambos podem trocar mensagens a fim de acordarem a troca, venda ou compra de livros.
