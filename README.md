@@ -1,16 +1,15 @@
 # <b>Livre</b>
-É uma plataforma de compra, venda e troca de livros usados. Os usuarios da
-plataforma podem disponibilizar seus livros com opção de compra ou troca
-e os interessados podem solicitar o livro. Apos demonstrar interesse no
-item, eles podem trocar mensagens para combinar como sera feita a troca 
-ou compra do livro.
+É uma plataforma de compra, venda e troca de livros usados. Os usuários da
+plataforma podem disponibilizar seus livros com as opções de venda ou troca
+e consequentemente, os interessados poderão solicitar o livro. Após demonstração interesse no
+produto, ambos podem trocar mensagens a fim de acordarem a troca, venda ou compra de livros.
 
-## Rodando o  projeto
+## Execução
 
-### Dependencias
+### Dependências
 
-* Servidor PHP (Xampp, local, Apache, etc.)
-* Git
+* Servidor Local PHP (Xampp, local, Apache, etc.)
+* Github
 
 ### Instruções
 
