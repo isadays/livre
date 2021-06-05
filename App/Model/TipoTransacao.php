@@ -3,7 +3,6 @@ class TipoTransacao{
     private $idtransacao;
     private $tipo;
 
-}
 public function setIDTransacao($idtransacao)
 {
     $this->idtransacao = $idtransacao;
@@ -21,6 +20,6 @@ public function getTipo()
     return $this-> tipo;
 }
 
-
+}
 
 ?>

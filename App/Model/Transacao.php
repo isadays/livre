@@ -8,7 +8,7 @@ class Transacao
     private $id_usuario;
     private $id_livro;
 
-}
+
 public function setIDTransacao($idtransacao)
 {
     $this->idtransacao = $idtransacao;
@@ -50,5 +50,5 @@ public function getIDLivro()
 {
     return $this-> id_livro;
 }
-
+}
 ?>
