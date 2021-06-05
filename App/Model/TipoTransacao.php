@@ -23,7 +23,7 @@ public function getTipo()
 // Metodo carregar Tipo Transacoes.
 public function carregarTransacoes($tipo)
 {
-    require_once './ConexaoBD.php';
+    require_once '../Config/ConexaoBD.php';
 
     $con = new ConexaoBD();
     $conn = $con->conectar();
@@ -49,7 +49,7 @@ public function carregarTransacoes($tipo)
 // Metodo atualizar banco de dados.
 public function atualizarBD()
 {
-    require_once './ConexaoBD.php';
+    require_once '../Config/ConexaoBD.php';
 
     $con = new ConexaoBD();
     $conn = $con->conectar();
