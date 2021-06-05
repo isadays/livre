@@ -1,16 +1,17 @@
 # <b>Livre</b>
-É uma plataforma de compra, venda e troca de livros usados. Os usuarios da
-plataforma podem disponibilizar seus livros com opção de compra ou troca
-e os interessados podem solicitar o livro. Apos demonstrar interesse no
-item, eles podem trocar mensagens para combinar como sera feita a troca 
-ou compra do livro.
+Trabalho de Conclusão de Curso - Desenvolvimento de Sistemas.
 
-## Rodando o  projeto
+Este é o projeto de uma plataforma de compra, venda ou troca de livros usados. Os usuários da
+plataforma podem disponibilizar seus livros com as opções de venda ou troca
+e consequentemente, os interessados poderão solicitar o livro. Após demonstração de interesse no
+produto, ambos podem trocar mensagens a fim de acordarem a troca, venda ou compra de livros.
 
-### Dependencias
+## Execução
 
-* Servidor PHP (Xampp, local, Apache, etc.)
-* Git
+### Dependências
+
+* Servidor Local PHP 
+* Github
 
 ### Instruções
 
@@ -19,8 +20,9 @@ ou compra do livro.
 git clone https://github.com/patrikrufino/livre.git
 ```
 
-2 - Abra em sua IDE.
+2 - Execute em sua IDE de preferência .
 
-3 - Acesse seu localhost com a pasta do projeto exemplo:
+3 - Acesse seu localhost com a pasta do projeto.  
+Exemplo:
 
 [http://localhost/livre/](http://localhost/livre/)
