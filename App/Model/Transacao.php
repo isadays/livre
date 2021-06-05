@@ -54,7 +54,7 @@ public function getIDLivro()
 
 public function inserirBD()
 {
-    require_once './ConexaoBD.php';
+    require_once '../Config/ConexaoBD.php';
 
     $con = newConexaoBD();
     $conn = $con->conectar();
@@ -81,11 +81,34 @@ public function inserirBD()
         return FALSE;
     }
 }
+    
+public function excluirTransações($id_livro)
+{
+    require_once '../Config/ConexaoBD.php';
+
+    $con = new ConexaoBD();
+    $conn = $con->conectar();
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+
+    $sql = "DELETE FROM transacoes WHERE idtransacao = '".$idtransacao."'";
+
+    if ($conn->query($sql) === true) {
+
+        $conn->close();
+        return true;
+
+    }
+
+    $conn->close();
+    return false;
+}
 
 // Metodo carregar Transacoes.
 public function carregarTransacoes($idtransacao)
 {
-    require_once './ConexaoBD.php';
+    require_once '../Config/ConexaoBD.php';
 
     $con = new ConexaoBD();
     $conn = $con->conectar();
@@ -115,7 +138,7 @@ public function carregarTransacoes($idtransacao)
 // Metodo atualizar banco de dados.
 public function atualizarBD()
 {
-    require_once './ConexaoBD.php';
+    require_once '../Config/ConexaoBD.php';
 
     $con = new ConexaoBD();
     $conn = $con->conectar();
