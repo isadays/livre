@@ -3,16 +3,16 @@
 
 class Usuario
 {
-    private $id_usuario;
-    private $nome;
-    private $email;
-    private $senha;
-    private $celular;
+    private mixed $id_usuario;
+    private mixed $nome;
+    private mixed $email;
+    private mixed $senha;
+    private mixed $celular;
 
     /**
      * @return mixed
      */
-    public function getIdUsuario()
+    public function getIdUsuario(): mixed
     {
         return $this->id_usuario;
     }
@@ -20,7 +20,7 @@ class Usuario
     /**
      * @param mixed $id_usuario
      */
-    public function setIdUsuario($id_usuario): void
+    public function setIdUsuario(mixed $id_usuario): void
     {
         $this->id_usuario = $id_usuario;
     }
@@ -28,7 +28,7 @@ class Usuario
     /**
      * @return mixed
      */
-    public function getNome()
+    public function getNome(): mixed
     {
         return $this->nome;
     }
@@ -36,7 +36,7 @@ class Usuario
     /**
      * @param mixed $nome
      */
-    public function setNome($nome): void
+    public function setNome(mixed $nome): void
     {
         $this->nome = $nome;
     }
@@ -44,7 +44,7 @@ class Usuario
     /**
      * @return mixed
      */
-    public function getEmail()
+    public function getEmail(): mixed
     {
         return $this->email;
     }
@@ -52,7 +52,7 @@ class Usuario
     /**
      * @param mixed $email
      */
-    public function setEmail($email): void
+    public function setEmail(mixed $email): void
     {
         $this->email = $email;
     }
@@ -60,7 +60,7 @@ class Usuario
     /**
      * @return mixed
      */
-    public function getSenha()
+    public function getSenha(): mixed
     {
         return $this->senha;
     }
@@ -68,7 +68,7 @@ class Usuario
     /**
      * @param mixed $senha
      */
-    public function setSenha($senha): void
+    public function setSenha(mixed $senha): void
     {
         $this->senha = $senha;
     }
@@ -76,7 +76,7 @@ class Usuario
     /**
      * @return mixed
      */
-    public function getCelular()
+    public function getCelular(): mixed
     {
         return $this->celular;
     }
@@ -84,16 +84,16 @@ class Usuario
     /**
      * @param mixed $celular
      */
-    public function setCelular($celular): void
+    public function setCelular(mixed $celular): void
     {
         $this->celular = $celular;
     }
 
-    public function inserirBD()
+    public function inserirBD(): bool
     {
-        require_once './ConexaoBD.php';
+        require_once 'App/Config/ConexaoBD.php';
 
-        $con = newConexaoBD();
+        $con = new ConexaoBD();
         $conn = $con->conectar();
         if ($conn->connect_error) {
             die("Connection failed: $conn->connect_error");
@@ -108,7 +108,7 @@ class Usuario
             )";
 
         if ($conn->query($sql) == TRUE) {
-            $this->id = mysqli_insert_id($conn);
+            $this->id_usuario = mysqli_insert_id($conn);
             $conn->close();
             return TRUE;
         }else {
@@ -118,9 +118,9 @@ class Usuario
     }
 
     // Metodo carregar usuário.
-    public function carregarUsuario($email)
+    public function carregarUsuario($email): bool
     {
-        require_once './ConexaoBD.php';
+        require_once 'App/Config/ConexaoBD.php';
 
         $con = new ConexaoBD();
         $conn = $con->conectar();
@@ -132,11 +132,11 @@ class Usuario
         $re = $conn->query($sql);
         $r = $re->fetch_object();
         if ($r != null) {
-            $this->id = $r->id_usuario;
+            $this->id_usuario = $r->id_usuario;
             $this->nome = $r->nome;
             $this->email = $r->email;
             $this->senha = $r->senha;
-            $this->cpf = $r->celular;
+            $this->celular = $r->celular;
 
             $conn->close();
             return true;
@@ -147,9 +147,9 @@ class Usuario
     }
 
     // Metodo atualizar banco de dados.
-    public function atualizarBD()
+    public function atualizarBD(): bool
     {
-        require_once './ConexaoBD.php';
+        require_once 'App/Config/ConexaoBD.php';
 
         $con = new ConexaoBD();
         $conn = $con->conectar();
