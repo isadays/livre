@@ -6,14 +6,14 @@ require_once 'includes/header.php';
         <section>
             <div class="container mt-5">
                 <div class="d-flex justify-content-center">
-                    <a href="/livre/"><img class="mt-5 mb-3" src="https://github.com/patrikrufino/livre/blob/main/Public/Img/livre_logo.png?raw=true" alt="Logo Livre" style="max-width: 170px;"></a>
+                    <a href="/livre/"><img src="https://github.com/patrikrufino/livre/blob/main/Public/Img/livre_logo.png?raw=true" alt="Logo Livre" style="max-width: 100px;"></a>
                 </div>
-                <div class="mt-5 d-flex justify-content-center">
+                <div class="mt-3 d-flex justify-content-center">
                     <h4>Bem-vindo de volta!</h4>
                 </div>
                 <div class="row">
                     <div class="col-md-4 offset-md-4">
-                        <div class="login-form bg-white shadow mt-4 p-4">
+                        <div class="login-form bg-white shadow p-4">
                             <form action="/App/Controller/navegacao.php" method="POST" class="row g-3">
                                 <p><strong>Já possui uma conta?</strong> Prencha para continuar.</p>
                                 <div class="col-12">
