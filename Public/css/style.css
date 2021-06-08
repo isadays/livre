@@ -22,3 +22,8 @@ nav .brand {
 brand {
     max-width: 150px;
 }
+
+.content {
+    margin-top: 300px;
+    max-width: 1000px;
+}
