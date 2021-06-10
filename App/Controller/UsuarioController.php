@@ -8,7 +8,7 @@ if(!isset($_SESSION))
 class UsuarioController
 {
     public function inserir($nome, $email, $celular, $senha) {
-        require_once '/Model/Usuario.php';
+        require_once '/App/Model/Usuario.php';
         $usuario = new Usuario();
         $usuario->setNome($nome);
         $usuario->setEmail($email);
@@ -19,4 +19,17 @@ class UsuarioController
         $_SESSION['usuario'] = serialize($usuario);
         return $r;
     }
+    public function login($email, $senha)
+    {
+        require_once '/App/Model/Usuario.php';
+        $usuario = new Usuario();
+        $usuario->carregarUsuario($email);
+        if ($usuario->getSenha() == $senha) {
+            $_SESSION['usuario'] = serialize($usuario);
+            return true;
+        } else {
+            return false;
+        }
+    }
+
 }

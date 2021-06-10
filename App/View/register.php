@@ -33,7 +33,7 @@ require_once 'includes/header.php';
                                     <input type="password" name="password" class="form-control" placeholder="senha">
                                 </div>
                                 <div class="col-12">
-                                    <button type="submit" class="btn btn-success float-end">Cadastrar</button>
+                                    <button type="submit" name="btnCadastro" class="btn btn-success float-end">Cadastrar</button>
                                 </div>
                             </form>
                             <hr class="mt-4">

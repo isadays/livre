@@ -14,7 +14,7 @@ require_once 'includes/header.php';
                 <div class="row">
                     <div class="col-md-4 offset-md-4">
                         <div class="login-form bg-white shadow p-4">
-                            <form action="/App/Controller/navegacao.php" method="POST" class="row g-3">
+                            <form action="/App/Controller/Navegacao.php" method="POST" class="row g-3">
                                 <p><strong>Já possui uma conta?</strong> Prencha para continuar.</p>
                                 <div class="col-12">
                                     <label>Email</label>
@@ -32,7 +32,7 @@ require_once 'includes/header.php';
                                 </div>
                                 <div class="col-12">
                                     <a class="float-begin" href="#">Esqueci a senha!</a>
-                                    <button type="submit" class="btn btn-success float-end">Login</button>
+                                    <button type="submit" name="btnLogin" class="btn btn-success float-end">Login</button>
                                 </div>
                             </form>
                             <hr class="mt-4">
