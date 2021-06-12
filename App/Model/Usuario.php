@@ -3,95 +3,95 @@
 
 class Usuario
 {
-    private mixed $id_usuario;
-    private mixed $nome;
-    private mixed $email;
-    private mixed $senha;
-    private mixed $celular;
+    private  $id_usuario;
+    private  $nome;
+    private  $email;
+    private  $senha;
+    private  $celular;
 
     /**
-     * @return mixed
+     * @return 
      */
-    public function getIdUsuario(): mixed
+    public function getIdUsuario()
     {
         return $this->id_usuario;
     }
 
     /**
-     * @param mixed $id_usuario
+     * @param $id_usuario
      */
-    public function setIdUsuario(mixed $id_usuario): void
+    public function setIdUsuario( $id_usuario): void
     {
         $this->id_usuario = $id_usuario;
     }
 
     /**
-     * @return mixed
+     * @return 
      */
-    public function getNome(): mixed
+    public function getNome()
     {
         return $this->nome;
     }
 
     /**
-     * @param mixed $nome
+     * @param  $nome
      */
-    public function setNome(mixed $nome): void
+    public function setNome( $nome): void
     {
         $this->nome = $nome;
     }
 
     /**
-     * @return mixed
+     * @return 
      */
-    public function getEmail(): mixed
+    public function getEmail() 
     {
         return $this->email;
     }
 
     /**
-     * @param mixed $email
+     * @param  $email
      */
-    public function setEmail(mixed $email): void
+    public function setEmail( $email): void
     {
         $this->email = $email;
     }
 
     /**
-     * @return mixed
+     * @return 
      */
-    public function getSenha(): mixed
+    public function getSenha()
     {
         return $this->senha;
     }
 
     /**
-     * @param mixed $senha
+     * @param  $senha
      */
-    public function setSenha(mixed $senha): void
+    public function setSenha( $senha): void
     {
         $this->senha = $senha;
     }
 
     /**
-     * @return mixed
+     * @return 
      */
-    public function getCelular(): mixed
+    public function getCelular()
     {
         return $this->celular;
     }
 
     /**
-     * @param mixed $celular
+     * @param  $celular
      */
-    public function setCelular(mixed $celular): void
+    public function setCelular( $celular): void
     {
         $this->celular = $celular;
     }
 
     public function inserirBD(): bool
     {
-        require_once 'App/Config/ConexaoBD.php';
+        require_once '/Applications/XAMPP/xamppfiles/htdocs/livre/App/Config/ConexaoBD.php';
 
         $con = new ConexaoBD();
         $conn = $con->conectar();
@@ -120,7 +120,7 @@ class Usuario
     // Metodo carregar usuário.
     public function carregarUsuario($email): bool
     {
-        require_once 'App/Config/ConexaoBD.php';
+        require_once '/Applications/XAMPP/xamppfiles/htdocs/livre/App/Config/ConexaoBD.php';
 
         $con = new ConexaoBD();
         $conn = $con->conectar();
@@ -149,7 +149,7 @@ class Usuario
     // Metodo atualizar banco de dados.
     public function atualizarBD(): bool
     {
-        require_once 'App/Config/ConexaoBD.php';
+        require_once '/Applications/XAMPP/xamppfiles/htdocs/livre/App/Config/ConexaoBD.php';
 
         $con = new ConexaoBD();
         $conn = $con->conectar();

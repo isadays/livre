@@ -14,8 +14,8 @@ require_once 'includes/header.php';
                 <div class="row">
                     <div class="col-md-4 offset-md-4">
                         <div class="login-form bg-white shadow p-4">
-                            <form action="/App/Controller/Navegacao.php" method="POST" class="row g-3">
-                                <p><strong>Já possui uma conta?</strong> Prencha para continuar.</p>
+                            <form action="Navegacao.php" method="POST" class="row g-3">
+                                <p><strong>Já possui uma conta?</strong> Preencha para continuar.</p>
                                 <div class="col-12">
                                     <label>Email</label>
                                     <input type="text" name="username" class="form-control" placeholder="email">
@@ -32,19 +32,22 @@ require_once 'includes/header.php';
                                 </div>
                                 <div class="col-12">
                                     <a class="float-begin" href="#">Esqueci a senha!</a>
-                                    <button type="submit" name="btnLogin" class="btn btn-success float-end">Login</button>
+                                    <button name="btnLogin" class="btn btn-success float-end">Login</button>
                                 </div>
-                            </form>
-                            <hr class="mt-4">
+                                <hr class="mt-4">
                             <div class="col-12">
-                                <p id="registro" class="text-center mb-0">Ainda não tem uma conta? <a href="register.php">Cadastre-se!</a></p>
+                                <p id="registro" class="text-center mb-0">Ainda não tem uma conta? 
+                                    <button name="btnCadastrese" class="btn btn-success float-end">Cadastre-se!</button>
+                                </p>
                             </div>
                         </div>
+                            </form>
+                            
                     </div>
                 </div>
             </div>
         </section>
     </main>
 <?php
-require_once 'includes/footer.php'
+require_once '/Applications/XAMPP/xamppfiles/htdocs/livre/App/View/includes/footer.php'
 ?>
