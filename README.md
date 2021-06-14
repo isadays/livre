@@ -14,14 +14,14 @@ Free, is a web application made in PHP on an MVC framework, which allows people 
 
 ### Running the project
 
-1 - Clone this repository on your PHP server
+#### 1 - Clone this repository on your PHP server
 ```
 git clone https://github.com/isadays/livre.git
 ```
 
-2 - Open the folder in your IDE of choice.
+#### 2 - Open the folder in your IDE of choice.
 
-3 - Configure the file Config.php
+#### 3 - Configure the file Config.php
 
 ```PHP
 /*
@@ -52,14 +52,20 @@ const DATA_LAYER_CONFIG = [
     ]
 ];
 ```
-4 - Run the migrations
+#### 4 - Run the migrations
 
 In path "/migrations", you can find the migration data of the project.
 
 You can run it on your favorite database
 
-5 - You can run it on your favorite database
+#### 5 - Install composer on the project
+```
+composer install
+```
+#### 5 - Ready!
 
-Example
+Now just access your project's URL.
+
+Example:
 
 [http://localhost/livre/](http://localhost/livre/)
