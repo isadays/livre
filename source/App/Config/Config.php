@@ -1,6 +1,6 @@
 <?php
 
-const ROOT = "http://localhost/livredon/";
+const ROOT = "http://localhost/livre/";
 
 const SITE = "Livre";
 
