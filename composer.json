@@ -1,0 +1,36 @@
+{
+  "name": "patrikrufino/livredon",
+  "description": "Plataforma para doaçao de livros",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Patrik A. Rufino",
+      "email": "patrik.rufino@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "config": {
+    "vendor-dir": "vendor"
+  },
+  "autoload": {
+    "psr-4": {
+      "Source\\": "source/"
+    },
+    "files": [
+      "source/App/Config/Config.php",
+      "source/App/Config/Helpers.php"
+    ]
+  },
+  "require": {
+    "coffeecode/datalayer": "1.1.8",
+    "coffeecode/router": "1.0.8",
+    "coffeecode/optimizer": "2.0.2",
+    "phpmailer/phpmailer": "v6.4.1",
+    "league/oauth2-facebook": "2.0.5",
+    "league/oauth2-google": "3.0.4",
+    "ext-pdo": "*",
+    "league/plates": "v4.0.0-alpha",
+    "ext-json": "*"
+  }
+}

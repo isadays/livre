@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu Condensed"
+}
+
+a.nav-item {
+    font-size: 1rem !important;
+}
+
+.auth-nav {
+    margin-right: 100px;
+}
+
+nav .brand {
+    max-width: 80px;
+    margin-left: 100px;
+}
+
+#logo {
+    max-width: 100px;
+}
+
+.content {
+    margin-top: 300px;
+    max-width: 1000px;
+}
