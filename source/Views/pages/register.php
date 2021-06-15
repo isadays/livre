@@ -37,7 +37,7 @@
                     </form>
                     <hr class="mt-4">
                     <div class="col-12">
-                        <p class="text-center mb-0">Já tem uma conta? <a href="App/View/login.php">Faça o login.</a></p>
+                        <p class="text-center mb-0">Já tem uma conta? <a href=<?= url("/login") ?>>Faça o login.</a></p>
                     </div>
                 </div>
             </div>

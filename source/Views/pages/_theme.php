@@ -69,7 +69,7 @@ else:
                     <a class="nav-link" aria-current="page" href="<?= url("login") ?>" style="font-size: 1rem">Login</a>
                 </li>
                 <li class="nav-item px-2">
-                    <a class="nav-link" aria-current="page" href="<?= url("/register") ?>" style="font-size: 1rem">Registrar</a>
+                    <a class="nav-link" aria-current="page" href="<?= url("/registrar") ?>" style="font-size: 1rem">Registrar</a>
                 </li>
             </ul>
         </div>

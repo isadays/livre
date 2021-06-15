@@ -16,8 +16,9 @@ $router->namespace("Source\App\Controllers");
  * */
 $router->group(null);
 $router->get("/", "WebController:home", "web.home");
+$router->get("/registrar", "WebController:register", "web.register");
 $router->get("/login", "WebController:login", "web.login");
-$router->get("/registro", "WebController:register", "web.register");
+
 
 /*
  * USER

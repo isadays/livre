@@ -34,7 +34,7 @@
                     </form>
                     <hr class="mt-4">
                     <div class="col-12">
-                        <p id="registro" class="text-center mb-0">Ainda não tem uma conta? <a href="register.php">Cadastre-se!</a></p>
+                        <p id="registro" class="text-center mb-0">Ainda não tem uma conta? <a href=<?= url("/registrar") ?>>Cadastre-se!</a></p>
                     </div>
                 </div>
             </div>
