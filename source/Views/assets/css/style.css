@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Ubuntu Condensed"
+    font-family: "Ubuntu Condensed" 
 }
 
 a.nav-item {
@@ -22,6 +22,61 @@ nav .brand {
 }
 
 .content {
-    margin-top: 300px;
+    margin-top: 120px;
+}
+
+.bg-gradient-main {
+    background-image: linear-gradient(180deg, rgba(58, 16, 175, 90%), rgba(207, 4, 129, 90%)) ;
+    margin-top: -18px;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    padding: 140px 30px 140px 30px;
+    justify-content: center;
+}
+
+.text-main {
+    font-family: "Ubuntu Condensed";
+    font-weight: bold;
+    padding: 180px 0 80px 80px;
+    font-size: 380%;
+    text-shadow: 2px 2px #383838;
+    justify-content: center;
+}
+
+.livros-destaque {
+    font-size: 150%;
+    color: rgb(193, 126, 255);
+}
+
+.hero {
+    padding-right: 80px;
+}
+
+.par-main {
+    padding: 0px 0 80px 80px;
+    font-size: 1.5rem;
+    color: whitesmoke;
+    text-shadow: 2px 2px #383838;
+}
+
+.btn-home {
+    font-size: 24px;
+    text-shadow: 2px 2px #383838;
+}
+
+.img-hero {
     max-width: 1000px;
+}
+
+.content-main {
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    padding: 140px 30px 140px 30px;
+    justify-content: center;
+}
+
+.find-books {
+    padding: 300px 80px 80px 0;
 }
