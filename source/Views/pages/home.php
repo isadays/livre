@@ -46,6 +46,23 @@
 <div class="content-main">
     <h1 class="text-center"><b>Contato</b></h1>
     <div class="container">
+        <div class="card shadow p-5">
+            <form action="action_page.php">
 
+                <label for="fname">Nome</label>
+                <input type="text" id="name" name="name" placeholder="Seu nome...">
+
+                <label for="assunto">Assunto</label>
+                <input type="text" id="assunto" name="assunto" placeholder="Assunto do contato...">
+
+
+                <label for="message">Mensagem</label>
+                <textarea id="message" name="message" placeholder="Digite sua mensagem..." style="height:200px"></textarea>
+
+                <input type="submit" value="Enviar">
+
+            </form>
+        </div>
     </div>
+
 </div>
